@@ -1,0 +1,17 @@
+@import './base/reset.css';
+@import './components/font-awesome.min.css';
+@import './components/button.css';
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.container {
+    background-color: yellow;
+}
+
+.container + .container {
+    margin-top: 20px;
+}
