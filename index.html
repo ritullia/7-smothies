@@ -26,19 +26,54 @@
             <a href="#">Smoothies</a>
             <a href="#">Contact Us</a>
         </nav>
-        <nav class="icons">
+        <nav class="menu">
             <a href="#" class="fa fa-shopping-bag"></a>
             <a href="#" class="fa fa-search"></a>
         </nav>
+        <i class="fa fa-bars hamburger"></i>
     </header>
     <main class="container">
         <div class="gallery">
-            <img src="img/main-picture.png" alt="drink">
+            <picture>
+                <source media="(max-width: 799px)" srcset="./img/main-picture-mobile.png">
+                <source media="(min-width: 800px)" srcset="./img/main-picture.png">
+                <img src="img/main-picture.png" alt="drink">
+            </picture>
             <i class="fa fa-angle-left"></i>
             <i class="fa fa-angle-right"></i>
         </div>
         <div class="text">
-            About items
+            <p class="category">Berries</p>
+            <h1 class="title">Strawberry rush</h1>
+            <p class="description">The best blend of strawberries, rasberries and mulberrie</p>
+            <div class="contains">
+                <div class="list">
+                    <h2 class="list-title">Nutrition benefits:</h2>
+                    <ul class="list-plus">
+                        <li>Vitamin A</li>
+                        <li>Vitamin C</li>
+                        <li>Citric Acid</li>
+                    </ul>
+                </div>
+                <divc class="list">
+                    <h2 class="list-title">Content:</h2>
+                    <ul class="list-image">
+                        <li>
+                            <img src="./img/berry.png" alt="braske">
+                        </li>
+                        <li>
+                            <img src="./img/raspberry.png" alt="aviete">
+                        </li>
+                        <li>
+                            <img src="./img/blackberry.png" alt="gervuoge">
+                        </li>
+                    </ul>
+            </div>
+            <form>
+                <input type="hidden" value="strawberry-rush" name="selected-item" id="selected-item">
+                <button type="submit">Add to cart</button>
+            </form>
+        </div>
         </div>
     </main>
 </body>
