@@ -113,6 +113,7 @@ main.container {
 .text > .contains {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 20px 50px;
 }
 
@@ -204,10 +205,10 @@ main.container {
         flex-direction: row;
     }
     .gallery {
-        width: 60%;
+        width: 55%;
     }
     .text {
-        width: 40%;
+        width: 45%;
     }
 }
 @media (min-width: 1000px) {
